@@ -2,9 +2,9 @@
 
 **PassCraft** is a JavaFX Password Generator with support for multiple password generation, strength indication, and easy copy to clipboard.
 
-## Disclaimer
+## ⚠ Disclaimer
 
-> ⚠ **PassCraft is an educational project and is not intended to replace established password managers or online password generators.**
+> **PassCraft is an educational project and is not intended to replace established password managers or online password generators.**
 > Use generated passwords at your own risk. For highly secure passwords, consider using trusted services like LastPass, 1Password, or Bitwarden.
 
 ## 🚀 Features
