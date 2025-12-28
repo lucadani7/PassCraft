@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.lucadani.ui.MainViewController"
+      spacing="10" alignment="TOP_CENTER" style="-fx-padding: 15;">
+
+    <!-- Title -->
+    <Label text="PassCraft – Password Generator" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Slider for length -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Length:"/>
+        <Slider fx:id="lengthSlider" min="6" max="32" value="12" blockIncrement="1" showTickMarks="true" showTickLabels="true"/>
+        <Label fx:id="lengthLabel" text="12"/>
+    </HBox>
+
+    <!-- CheckBoxs for characters -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <CheckBox fx:id="lowercaseCheck" text="Lowercase" selected="true"/>
+        <CheckBox fx:id="uppercaseCheck" text="Uppercase" selected="true"/>
+        <CheckBox fx:id="digitsCheck" text="Digits" selected="true"/>
+        <CheckBox fx:id="symbolsCheck" text="Symbols" selected="true"/>
+    </HBox>
+
+    <!-- Spinner for password number -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Number of passwords:"/>
+        <Spinner fx:id="countSpinner" prefWidth="80"/>
+    </HBox>
+
+    <!-- Generate button -->
+    <Button fx:id="generateBtn" text="Generate" maxWidth="Infinity"/>
+
+    <!-- ListView for passwords -->
+    <ListView fx:id="passwordList" prefHeight="150" prefWidth="350"/>
+
+    <!-- Strength bar + label -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <ProgressBar fx:id="strengthBar" prefWidth="200" progress="0"/>
+        <Label fx:id="strengthLabel" text="Strength: -"/>
+    </HBox>
+
+    <!-- Copy button -->
+    <Button fx:id="copyBtn" text="Copy Selected" maxWidth="Infinity"/>
+
+</VBox>
